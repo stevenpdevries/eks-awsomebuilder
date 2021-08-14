@@ -1,6 +1,6 @@
 # eks-awsomebuilder-hello-service
 
-A sample Kubernetes service for a CI/CD Pipeline.
+A Kubernetes service for a CI/CD Pipeline.
 
 The Dockerfile is a [multi-stage](https://docs.docker.com/develop/develop-images/multistage-build/) build that
 compiles the Go application and then packages it in a minimal image that pulls from [scratch](https://hub.docker.com/_/scratch/).
