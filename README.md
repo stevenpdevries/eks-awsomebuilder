@@ -1,4 +1,4 @@
-# eks-awsomebuilder-hello-service-go
+# eks-awsomebuilder-hello-service
 
 A sample Kubernetes service for a CI/CD Pipeline.
 
