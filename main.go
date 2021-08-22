@@ -15,7 +15,7 @@ func main() {
 
 		f := fib()
 
-		res := &response{Message: "Hello World AWSome builders!! v2"}
+		res := &response{Message: "Hello AWSome builders!!"}
 
 		for _, e := range os.Environ() {
 			pair := strings.Split(e, "=")
@@ -23,9 +23,9 @@ func main() {
 		}
 		sort.Strings(res.EnvVars)
 
-		for i := 1; i <= 90; i++ {
-			res.Fib = append(res.Fib, f())
-		}
+		//for i := 1; i <= 90; i++ {
+		//	res.Fib = append(res.Fib, f())
+		//}
 
 		// Beautify the JSON output
 		out, _ := json.MarshalIndent(res, "", "  ")
@@ -35,7 +35,7 @@ func main() {
 
 		io.WriteString(w, string(out))
 
-		fmt.Println("Hello world - the log message")
+		fmt.Println("Hello - the log message")
 	})
 	http.ListenAndServe(":8080", nil)
 }
@@ -43,7 +43,7 @@ func main() {
 type response struct {
 	Message string   `json:"message"`
 	EnvVars []string `json:"env"`
-	Fib     []int    `json:"fib"`
+	// Fib     []int    `json:"fib"`
 }
 
 func fib() func() int {
