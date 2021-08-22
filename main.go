@@ -23,7 +23,7 @@ func main() {
 		}
 		sort.Strings(res.EnvVars)
 
-		res := &response{Fib: "Hello AWSome builders!! v7"}
+		res.Fib = "Hello AWSome builders!! v7"
 		
 		//for i := 1; i <= 90; i++ {
 		//	res.Fib = append(res.Fib, f())
