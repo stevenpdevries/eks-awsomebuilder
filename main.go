@@ -41,5 +41,3 @@ type response struct {
 	EnvVars []string `json:"env"`
 	Message2 string  `json:"message2"`
 }
-
-}
