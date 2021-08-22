@@ -13,7 +13,7 @@ import (
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 
-		f := fib()
+		//f := fib()
 
 		res := &response{Message: "Hello AWSome builders!! jjtest"}
 
@@ -23,6 +23,8 @@ func main() {
 		}
 		sort.Strings(res.EnvVars)
 
+		res := &response{Fib: "Hello AWSome builders!! v7"}
+		
 		//for i := 1; i <= 90; i++ {
 		//	res.Fib = append(res.Fib, f())
 		//}
@@ -43,7 +45,7 @@ func main() {
 type response struct {
 	Message string   `json:"message"`
 	EnvVars []string `json:"env"`
-	Fib     []int    `json:"msg"`
+	Fib     string    `json:"msg"`
 }
 
 func fib() func() int {
