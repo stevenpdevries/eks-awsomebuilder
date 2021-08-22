@@ -1,4 +1,4 @@
-# eks-awsomebuilder-hello-service
+# eks-awsomebuilder
 
 A Kubernetes service for a CI/CD Pipeline.
 
