@@ -21,7 +21,7 @@ func main() {
 		}
 		sort.Strings(res.EnvVars)
 
-		res.Message2 = "Inside main() of Go program inside the container image on Tuesday 8/31 v3"
+		res.Message2 = "Inside main() of Go program inside the container image on Wednesday 9/1"
 
 		// Beautify the JSON output
 		out, _ := json.MarshalIndent(res, "", "  ")
