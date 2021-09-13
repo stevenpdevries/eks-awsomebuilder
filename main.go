@@ -13,7 +13,7 @@ import (
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 
-		res := &response{Message: "Hello AWSome Builders!  Hello Octank!"}
+		res := &response{Message: "Hello AWSome Builders!  Hello Octank Testing for BMW demo!"}
 
 		for _, e := range os.Environ() {
 			pair := strings.Split(e, "=")
